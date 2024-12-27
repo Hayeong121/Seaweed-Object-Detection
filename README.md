@@ -47,11 +47,11 @@
      <br>
 * 클러스터링으로 1차 분류 후, 잘못 분류된 라벨은 수동으로 2차 분류 진행
 * 최종적으로 다음과 같이 유형 세분화
-  * aqua
+  * aqua <br>
   <img src="https://github.com/Hayeong121/assets/blob/main/Seaweed-Object-Detection/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A0%84%EC%B2%98%EB%A6%AC_2.png" width="700"><br>
-  * floating
+  * floating <br>
   <img src="https://github.com/Hayeong121/assets/blob/main/Seaweed-Object-Detection/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A0%84%EC%B2%98%EB%A6%AC_3.png" width="700"><br>
-  * string
+  * string <br>
   <img src="https://github.com/Hayeong121/assets/blob/main/Seaweed-Object-Detection/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A0%84%EC%B2%98%EB%A6%AC_4.png" width="700"><br>
      <br> 
 
