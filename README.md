@@ -23,22 +23,42 @@
 * 학습용, 검증용, 테스트용으로 분할되어 있으며, 각 분할은 무결함 이미지와 결함이 포함된 이미지로 구성
   <img src="https://github.com/Hayeong121/assets/blob/main/Seaweed-Object-Detection/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A0%95%EC%9D%98_1.png" width="700">
 * 김 이미지 내에서 발생할 수 있는 결함은 크게 세 가지 주요 카테고리로 분류
-* 각 결함 유형은 다음과 같이 정의
+* 각 결함 유형은 다음과 같이 정의<br>
   <img src="https://github.com/Hayeong121/assets/blob/main/Seaweed-Object-Detection/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A0%95%EC%9D%98_2.png" width="700">
-     <br>
      <br>
      
 ### 2. **EDA**
-
-     <br>
+* 결함 유형별 이미지 개수 및 비율 차이가 존재
+* fl 유형은 st 유형의 약 절반 수준으로 차이가 상당함 -> 데이터 증강 필요<br>
+  <img src="https://github.com/Hayeong121/assets/blob/main/Seaweed-Object-Detection/EDA_1.png" width="700">
+* 각 결함 유형별 이미지 내 위치 분포도
+* 결함이 상하좌우 약 50 픽셀을 제외한 안쪽에 고르게 분포<br>
+  <img src="https://github.com/Hayeong121/assets/blob/main/Seaweed-Object-Detection/EDA_2.png" width="700">
      <br>
 
 ### 3. **데이터 전처리**
 #### 3-1. **라벨링 세분화 (클러스터링)**
+* 각 유형 내에서도 다양한 형태의 결함이 존재
+* 결함의 색상을 이용한 클러스터링을 진행
+* 각 유형별 색상에 따른 클러스터의 엘보우 방법 활용 <br>
+  <img src="https://github.com/Hayeong121/assets/blob/main/Seaweed-Object-Detection/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A0%84%EC%B2%98%EB%A6%AC_1.png" width="700">
      <br>
-     <br>   
+* 클러스터링으로 1차 분류 후, 잘못 분류된 라벨은 수동으로 2차 분류 진행
+* 최종적으로 다음과 같이 유형 세분화
+  * aqua
+  <img src="https://github.com/Hayeong121/assets/blob/main/Seaweed-Object-Detection/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A0%84%EC%B2%98%EB%A6%AC_2.png" width="700">
+  * floating
+  <img src="https://github.com/Hayeong121/assets/blob/main/Seaweed-Object-Detection/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A0%84%EC%B2%98%EB%A6%AC_3.png" width="700">
+  * string
+  <img src="https://github.com/Hayeong121/assets/blob/main/Seaweed-Object-Detection/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A0%84%EC%B2%98%EB%A6%AC_4.png" width="700">
+     <br> 
 
 #### 3-2. **데이터 증강**
+* 결함 유형 중 floating 유형 이미지의 데이터 불균형을 해소하기 위해 수직/수평 뒤집기 기법을 적용하여 floating 개수 2배 증강<br>
+  <img src="https://github.com/Hayeong121/assets/blob/main/Seaweed-Object-Detection/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A0%84%EC%B2%98%EB%A6%AC_5.png" width="700">
+  
+* 결함 없는 이미지의 데이터 불균형을 해소하기 위해 Mixup 기법을 적용하여 2600개 증강<br>
+  <img src="https://github.com/Hayeong121/assets/blob/main/Seaweed-Object-Detection/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A0%84%EC%B2%98%EB%A6%AC_6.png" width="700">
      <br>
      <br>
      
