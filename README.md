@@ -9,7 +9,7 @@
 
 **역할(구성원)** : 팀장 (총 팀원 4명)
 
-**협업 툴** :  [Notion](https://www.notion.so/Seaweed-AI-1304e0ecc4d180bc8b8ac058a9ab4c9f)
+**협업 툴** :  [Notion](https://www.notion.so/Seaweed-AI-1304e0ecc4d180bc8b8ac058a9ab4c9f) <img src="https://github.com/Hayeong121/assets/blob/main/images/Notion-logo.png" width="35" height="35"/>
   
 **개발 툴**
 * **언어** : Python <img src="https://github.com/user-attachments/assets/3159747f-08b8-423a-bae3-776e5e233be1" width="35" height="35"/>
@@ -21,11 +21,10 @@
 
 ### 1. **데이터 정의**
 * 학습용, 검증용, 테스트용으로 분할되어 있으며, 각 분할은 무결함 이미지와 결함이 포함된 이미지로 구성
-  <img src="https://github.com/Hayeong121/assets/blob/main/Seaweed-Object-Detection/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A0%95%EC%9D%98_1.png" width="500">
+  <img src="https://github.com/Hayeong121/assets/blob/main/Seaweed-Object-Detection/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A0%95%EC%9D%98_1.png" width="700">
 * 김 이미지 내에서 발생할 수 있는 결함은 크게 세 가지 주요 카테고리로 분류
 * 각 결함 유형은 다음과 같이 정의
-  <img src="https://github.com/Hayeong121/assets/blob/main/Seaweed-Object-Detection/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A0%95%EC%9D%98_2.png" width="500">
-
+  <img src="https://github.com/Hayeong121/assets/blob/main/Seaweed-Object-Detection/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A0%95%EC%9D%98_2.png" width="700">
      <br>
      <br>
      
