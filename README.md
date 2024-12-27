@@ -53,8 +53,7 @@
   <img src="https://github.com/Hayeong121/assets/blob/main/Seaweed-Object-Detection/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A0%84%EC%B2%98%EB%A6%AC_3.png" width="700"><br>
   * string <br>
   <img src="https://github.com/Hayeong121/assets/blob/main/Seaweed-Object-Detection/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A0%84%EC%B2%98%EB%A6%AC_4.png" width="700"><br>
-     <br> 
-
+  
 #### 3-2. **데이터 증강**
 * 결함 유형 중 floating 유형 이미지의 데이터 불균형을 해소하기 위해 수직/수평 뒤집기 기법을 적용하여 floating 개수 2배 증강<br>
   <img src="https://github.com/Hayeong121/assets/blob/main/Seaweed-Object-Detection/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A0%84%EC%B2%98%EB%A6%AC_5.png" width="700">
