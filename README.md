@@ -9,12 +9,12 @@
 
 **역할(구성원)** : 팀장 (총 팀원 4명)
 
-**협업 툴** :  [Notion](https://www.notion.so/Seaweed-AI-1304e0ecc4d180bc8b8ac058a9ab4c9f) <img src="https://github.com/Hayeong121/assets/blob/main/images/Notion-logo.png" width="35" height="35"/>
+**협업 툴** :  [Notion](https://www.notion.so/Seaweed-AI-1304e0ecc4d180bc8b8ac058a9ab4c9f) <img src="https://github.com/Hayeong121/assets/blob/main/images/Notion-logo.png" width="20">
   
 **개발 툴**
-* **언어** : Python <img src="https://github.com/user-attachments/assets/3159747f-08b8-423a-bae3-776e5e233be1" width="35" height="35"/>
+* **언어** : Python <img src="https://github.com/user-attachments/assets/3159747f-08b8-423a-bae3-776e5e233be1" width="20">
 
-* **개발환경** : Google Colab <img src="https://github.com/user-attachments/assets/d301ccf8-c112-4567-9fd2-31a32a6b0641" width="60" height="35"/>
+* **개발환경** : Google Colab <img src="https://github.com/user-attachments/assets/d301ccf8-c112-4567-9fd2-31a32a6b0641" width="40" height="20">
 <br>
 
 ## 프로젝트 수행 과정
